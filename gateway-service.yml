@@ -21,3 +21,6 @@ spring:
               filters:
                 - StripPrefix=1
                 - AddResponseHeader=X-Gateway, gateway-service
+                - name: CircuitBreaker
+                  args:
+                    name: teacherCircuitBreaker
